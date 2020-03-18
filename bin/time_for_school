@@ -12,9 +12,22 @@ avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
 
+jim = User.new
+
+jim.first_name = "Jim"
+jim.last_name = "Jacobs"
+
 
 some_knowledge = avi.teach 
 
 steve.learn(some_knowledge)
+steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+p steve.knowledge
+
+
+# puts jim
+
+# puts jim.learn # returns a no method error, because jim is not a student. a parent cannot use it's child's methods.
